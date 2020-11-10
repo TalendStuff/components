@@ -162,7 +162,7 @@ public class JDBCInputReader extends AbstractBoundedReader<IndexedRecord> {
 
             setting.setTrimMap(trimMap);
         }
-        LOG.debug(querySchema.toString(true));
+        LOG.debug("QuerySchema: "+ querySchema.toString());
 
         return querySchema;
     }

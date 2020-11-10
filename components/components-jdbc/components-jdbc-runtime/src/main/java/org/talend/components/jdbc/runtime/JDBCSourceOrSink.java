@@ -117,7 +117,6 @@ public class JDBCSourceOrSink extends JdbcRuntimeSourceOrSinkDefault {
 
     @Override
     public ValidationResult validate(RuntimeContainer runtime) {
-        LOG.debug("Connection attempt to '{}' with the username '{}'",setting.getJdbcUrl(),setting.getUsername());
         return JdbcRuntimeUtils.validate(runtime, this);
     }
 
